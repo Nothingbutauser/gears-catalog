@@ -1,0 +1,41 @@
+$catppuccin-pink: #ea76cb;
+$catppuccin-base: #24273a;
+$catppuccin-crust-white: #dce0e8;
+$catppuccin-text-white: #4c4f69;
+
+* {
+    --bs-primary: #{$catppuccin-pink};
+    --bs-primary-rgb: #{$catppuccin-pink};
+    $component-active-bg: $catppuccin-pink;
+}
+
+.btn-primary {
+    --bs-btn-bg: #{$catppuccin-pink};
+    --bs-btn-border-color: #{$catppuccin-pink};
+
+    --bs-btn-hover-border-color: #{darken($catppuccin-pink, 5%)};
+    --bs-btn-hover-bg: #{darken($catppuccin-pink, 5%)};
+
+    --bs-btn-active-bg: #{darken($catppuccin-pink, 10%)};
+    --bs-btn-active-border-color: #{darken($catppuccin-pink, 10%)};
+
+    position: absolute;
+    bottom: 1rem;
+}
+
+.form-control {
+    background-color: #{$catppuccin-crust-white};
+    color: $catppuccin-text-white;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem rgba($color: $catppuccin-pink, $alpha: 0.5);
+    border: 0;
+
+    background-color: #{$catppuccin-crust-white};
+    color: $catppuccin-text-white;
+}
+
+.card {
+    background-color: $catppuccin-base;
+}

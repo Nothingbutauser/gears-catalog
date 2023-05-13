@@ -1,0 +1,72 @@
+body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    background-color: #1e2030;
+    color: #cad3f5;
+
+    font-family: "Roboto Mono", monospace;
+}
+
+header {
+    width: 100vw;
+    height: 6rem;
+
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 2rem;
+    filter: blur(0.01rem);
+}
+
+header > form {
+    width: 30rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1250px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1251px) and (max-width: 1549px) {
+    main {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
