@@ -26,7 +26,7 @@ function App() {
                 <h1>gears-catalog</h1>
 
                 <Form role="search">
-                    <Form.Control placeholder="Search..." onChange={filterBySearch} />
+                    <Form.Control placeholder="검색" onChange={filterBySearch} />
                 </Form>
             </header>
 
