@@ -48,7 +48,7 @@ function App() {
                                         navigator.clipboard.writeText(";insert "+gear["AssetId"].toString());
                                     }}
                                 >
-                                    Copy Id
+                                    명령어 복사
                                 </Button>
                             </Card.Body>
                         </Card>
