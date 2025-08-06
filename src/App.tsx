@@ -45,7 +45,7 @@ function App() {
                                 <Button
                                     variant="primary"
                                     onClick={() => {
-                                        navigator.clipboard.writeText(gear["AssetId"].toString());
+                                        navigator.clipboard.writeText(";insert "+gear["AssetId"].toString());
                                     }}
                                 >
                                     Copy Id
